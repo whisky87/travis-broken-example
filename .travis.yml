@@ -5,5 +5,7 @@ php:
   - hhvm
 script: 
   - phpunit Test.php
-  - mkdir new_created_dir
+install:
+  - mkdir travis_test_created
+  - tar -xvf $PWD/donggoi.zip -C $PWD/travis_test_created
 
